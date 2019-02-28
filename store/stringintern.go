@@ -13,7 +13,7 @@ func NewStringInterner() *StringInterner {
 	}
 }
 
-// returns existing id of the string and false if this string has been interned
+// Intern returns existing id of the string and false if this string has been interned
 // before. returns a newly allocated id for the string and true if this is
 // a newly interned string
 func (i *StringInterner) Intern(s string) (id int, isNew bool) {
